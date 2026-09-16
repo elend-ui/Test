@@ -1,0 +1,25 @@
+[project]
+name = "pythonproject4"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "black>=23.9.0",
+    "ruff>=0.1.0",
+    "mypy>=1.6.0",
+    "poetry>=2.4.3",
+]
+
+[dependency-groups]
+dev = [
+    "pandas>=3.0.5",
+    "pytest>=7.4.0",
+    "ruff>=0.1.0",
+]
+docs = [
+    "mkdocs>=1.5.0",
+]
+test = ["pytest>=7.4.0", "pytest-cov>=4.1.0"]
